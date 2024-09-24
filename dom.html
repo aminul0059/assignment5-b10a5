@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html data-theme="light" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>accordian</title>
+    <script src="https://cdn.tailwindcss.com"></script>  
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+  <header class="sticky  z-20 top-0 bg-success-400 ">
+    <!-- nav starts here -->
+
+    <div class=" navbar bg-base-100 glass shadow-lg bg-accent sticky bg-warning-100 bg-accent navbar lg:mx-auto  bg-base-100">
+        <div class="navbar-start">
+          
+          
+          <a href="dom.html" class="btn lbtn-success btn-ghost text-4xl w-3/4">Blog</a>
+        </div>
+        <div class="navbar-center  lg:flex">
+          <ul class="flex justify-center flex-col lg:flex-row items-center space-x-3">
+            <li><img src="assets/logo.png" alt=""></li>
+            <li>
+           
+            </li>
+            <li class="text-2xl hidden lg:inline font-bold">Donate Bangladesh</li>
+          </ul>
+        </div>
+        <div class="navbar-end mr-[60px] ">
+          <ul class="flex space-x-3 lg:mr-[10rem]">
+            <li><img src="assets/coin.png" alt=""></li>
+            <li class="font-bold text-2xl">5500 BDT</li>
+          </ul>
+        </div>
+      </div>
+
+  
+      
+
+    <!-- nav stop here -->
+
+    <!-- banner part starts here -->
+ <div class="divider p-6 ">
+    <div class="flex space-x-3 mt-[50px] mx-auto m-8">
+      <button id="show-donation-home" class="btn btn-success text-2xl font-bold"><a href="index.html">Donation</a></button>
+    <button id="show-donation-history" class="btn btn-light text-2xl font-bold">History</button>
+ </div>
+ </div>
+    <!-- banner part stop here -->
+</header>
+
+
+ <div class="container w-3/4 mx-auto space-y-3 my-accordion-2 mt-10 card border-b-base-200">
+  <div class="collapse collapse-arrow card bg-base-200">
+    <input type="radio" name="my-accordion-2" checked="checked" />
+    <div class="collapse-title text-xl font-medium">  What is the DOM?</div>
+    <div class="collapse-content">
+      <p>The Document Object Model (DOM) is a programming interface for web documents. It represents the structure of a document as a tree of objects, allowing programming languages to manipulate the document's content, structure, and styles.</p>
+    </div>
+  </div>
+  <div class="collapse collapse-arrow bg-base-200">
+    <input type="radio" name="my-accordion-2" />
+    <div class="collapse-title text-xl font-medium"> How is the DOM structured?</div>
+    <div class="collapse-content">
+      <p>        The DOM is structured as a tree of nodes, where each node represents a part of the document, such as an element, attribute, or text. The document itself is the root node, and elements are represented as child nodes.
+      </p>
+    </div>
+  </div>
+  <div class="collapse collapse-arrow bg-base-200">
+    <input type="radio" name="my-accordion-2" />
+    <div class="collapse-title text-xl font-medium">        How can you manipulate the DOM?
+    </div>
+    <div class="collapse-content">
+      <p>        You can manipulate the DOM using JavaScript methods such as <code>getElementById</code>, <code>querySelector</code>, and <code>createElement</code>. These methods allow you to access, modify, or create elements within the document.
+      </p>
+    </div>
+  </div>
+  <div class="collapse collapse-arrow bg-base-200">
+    <input type="radio" name="my-accordion-2" />
+    <div class="collapse-title text-xl font-medium">        What are DOM events?
+    </div>
+    <div class="collapse-content">
+      <p>        DOM events are actions that occur in the browser, such as user interactions (clicks, mouse movements, keyboard inputs) or other changes to the document. JavaScript can listen for these events and respond to them using event listeners.
+      </p>
+    </div>
+  </div>
+  <div class="collapse collapse-arrow bg-base-200">
+    <input type="radio" name="my-accordion-2" />
+    <div class="collapse-title text-xl font-medium">  What is the difference between the DOM and the CSSOM?</div>
+    <div class="collapse-content">
+      <p>        The DOM represents the structure of the document, while the CSSOM (CSS Object Model) represents the styles applied to the document. The CSSOM allows JavaScript to access and manipulate CSS styles dynamically.
+      </p>
+    </div>
+  </div>
+ </div>
+      
+ <script src="/js/home.js"></script>     
+ <script src="/js/utilites.js"></script>     
+ <script src="/js/feature.js"></script>     
+</body>
+</html>
